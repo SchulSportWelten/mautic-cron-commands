@@ -43,8 +43,10 @@ if (isset($_SERVER['MAUTIC_ROOT'])) {
     $docroot = __DIR__;
 }
 
-require_once $docroot.'/app/autoload.php';
-require_once $docroot.'/app/AppKernel.php';
+$docroot = substr($docroot, 0, strrpos($docroot, '/docroot'));
+
+require_once $docroot.'/docroot/autoload.php';
+require_once $docroot.'/docroot/app/AppKernel.php';
 require $docroot.'/vendor/autoload.php';
 
 use Symfony\Bundle\FrameworkBundle\Console\Application;
@@ -58,7 +60,11 @@ if (!isset($_GET[$secretphrase])) {
 }
 defined('IN_MAUTIC_CONSOLE') or define('IN_MAUTIC_CONSOLE', 1);
 
-$version = file_get_contents($docroot.'/app/version.txt');
+$releasedata = file_get_contents($docroot.'/docroot/app/release_metadata.json');
+$releasedataobj = json_decode($releasedata);
+
+
+$version = $releasedataobj->version;
 if (isset($_GET['pretty'])) {
     $pretty = $_GET['pretty'];
 }
