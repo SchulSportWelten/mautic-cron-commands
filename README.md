@@ -1,10 +1,5 @@
-# Mautic cron commands
-
-This version of Mautic cron commands tries to adjust to a Composer-based Mautic installation on Drupal 8.
-
-## Changes
 ---
-author:     Thomas <tf@ssw-film.de>
+author:     Virgil <virgil@virgilwashere.co> & Thomas <tf@ssw-film.de>
 date:       2023-01-23
 version:    0.2
 copyright:
@@ -15,24 +10,20 @@ license:    GPL3
 link:       <https://github.com/SchulSportWelten/mautic-cron-commands>
 ---
 
+# Mautic cron commands
 
+This version of Mautic cron commands tries to adjust the php script by Virgil to a Composer-based Mautic installation on Drupal 8.
+
+<br />
+<br />
+<br />
 
 ___
 
+<br />
+<br />
 
 
-
-
----
-author:     Virgil <virgil@virgilwashere.co>
-date:       2019-10-20
-version:    0.1.6
-copyright:
-  - 2019 Virgil
-  - All rights reserved
-license:    GPL3
-link:       <https://github.com/virgilwashere/mautic-cron-commands>
----
 <img alt="Mautic" align="right" width=128 src="https://cdn.jsdelivr.net/gh/virgilwashere/mautic-cron-commands/assets/mautic_logo.png">
 <!-- <img alt="Mautic" align="right" width=128 src="assets/mautic_logo.png?raw=true"> -->
 
