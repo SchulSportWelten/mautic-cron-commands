@@ -12,7 +12,7 @@ link:       <https://github.com/SchulSportWelten/mautic-cron-commands>
 
 # Mautic cron commands
 
-This version of Mautic cron commands tries to adjust the php script by Virgil to a Composer-based Mautic installation on Drupal 8.
+This version of Mautic cron commands tries to adjust the php script by Virgil to a Composer-based Mautic installation on PHP 8.
 
 <br />
 <br />
